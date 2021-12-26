@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <main>
+        <h1 class="text-center" id="title">freeCodeCamp Survey Form</h1>
+        <p class="text-center" id="description">Thank you for taking the time to help us improve the platform.</p>
+
+        <form action="#" class="bend-corner form-width" id="survey-form">
+            <div class="top-bottom padding">
+                <label for="name" class="" id="name-label">Name</label>
+                <input type="text" id="name" placeholder="FirstName LastName" required>
+                <label for="email" id="email-label">E-mail</label>
+                <input type="email" id="email" placeholder="abc@xyz.com" required>
+                <label for="number" id="number-label">Age</label>
+                <input type="number" name="" id="number" max="100" min="0" placeholder="Age" required>
+            </div>
+            <div class="padding">
+                <label for=" dropdown">What is your current job?</label>
+                <select name="" id="dropdown">
+                    <option value="">Select Your Profession</option>
+                    <option value="Student">Student</option>
+                    <option value="Intern">Intern</option>
+                    <option value="Freelancer">Freelancer</option>
+                    <option value="Full Time Job">Full Time Job</option>
+                </select>
+            </div>
+            <div class="padding">
+                <label for="">Will you recommend us to your friends?</label><br>
+                <input type="radio" name="review" id="definitely" checked>
+                <label for="definitely">Definitely</label>
+                <input type="radio" name="review" id="maybe">
+                <label for="maybe">Maybe</label>
+                <input type="radio" name="review" id="notsure">
+                <label for="notsure">Not Sure</label>
+            </div>
+            <div class="padding top-bottom">
+                <label for="">Select the Languages to Learn(select all that apply):</label>
+                <label for=""><input type="checkbox" name="Languages" id="java" value="Java"> Java</label>
+                <label for=""><input type="checkbox" name="Languages" id="c" value="C"> C</label>
+                <label for=""><input type="checkbox" name="Languages" id="python" value="Python"> Python</label>
+                <label for=""><input type="checkbox" name="Languages" id="js" value="JS"> JavaScript</label>
+            </div>
+            <textarea class="text-area-width" name="Comment" id="" cols="60" rows="10" placeholder="Any other comments..."></textarea>
+            <button class="margin" id="submit">Submit</button>
+        </form>
+    </main>
+</body>
+
+</html>

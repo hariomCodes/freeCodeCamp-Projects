@@ -1,0 +1,28 @@
+#header-img {
+  width: 100px;
+  height: auto;
+}
+#header ul, #footer ul {
+  list-style: none;
+}
+
+.flex-row{
+  display: flex;
+  justify-content: center;
+}
+.flex-col{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid midnightblue;
+  margin: 10px;
+  background-color: snow;
+}
+.btn {
+  margin-bottom: 5px;
+  background-color: hsl(60,70%,60%);
+  font-weight: 700;
+  color: hsl(240,30%,30%);
+}
