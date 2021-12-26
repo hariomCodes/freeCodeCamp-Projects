@@ -11,8 +11,10 @@
 
 <body>
     <header class="flex-row" id="header">
-        <img id="header-img" src="/934516-naruto-chibi-wallpaper-2000x2000-desktop.jpg" alt="The Company Logo">
-        <h1>This is the Landing Page</h1>
+        <section class="logo flex-row">
+            <img id="header-img" src="/934516-naruto-chibi-wallpaper-2000x2000-desktop.jpg" alt="The Company Logo">
+            <h1>This is the Landing Page</h1>
+        </section>
         <nav id="nav-bar">
             <ul>
                 <li><a class="nav-link" href="#queries">How It Works</a></li>
@@ -25,14 +27,14 @@
     <main class="flex-col">
         <section id="queries">
 
-            <iframe id="video" width="640" height="360" src="https://www.youtube.com/embed/Urx8b7jhBXM"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-            
+            <iframe id="video" height="360" src="https://www.youtube.com/embed/Urx8b7jhBXM"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
         </section>
         <form class="flex-col" id="form" action="https://www.freecodecamp.com/email-submit">
-            <h2>To Use All the Features of website Please Fill the Form below &DoubleDownArrow;</h2>
+            <p>Please Fill the Details below &DoubleDownArrow;</p>
             <input id="email" type="email" placeholder="Enter Your Email Here" name="email" required>
             <input class="btn" id="submit" type="submit" value="Submit">
         </form>
@@ -41,7 +43,7 @@
 
         </section>
         <section class="flex-row" id="pricing">
-            <div class="flex-col">
+            <div id="cheap-pack" class="flex-col price-card">
                 <h2>The Cheapest Plan</h2>
                 <ul>
                     <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, expedita.</li>
@@ -50,7 +52,7 @@
                 </ul>
                 <button class="btn">Click to Buy</button>
             </div>
-            <div class="flex-col">
+            <div id="value-pack" class="flex-col price-card">
                 <h2>The Value For Money Plan</h2>
                 <ul>
                     <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, expedita.</li>
@@ -59,7 +61,7 @@
                 </ul>
                 <button class="btn">Click to Buy</button>
             </div>
-            <div class="flex-col">
+            <div id="premium-pack" class="flex-col price-card">
                 <h2>The Premium Features Plan</h2>
                 <ul>
                     <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, expedita.</li>
@@ -71,13 +73,12 @@
         </section>
 
     </main>
-    <footer id="footer">
+    <footer class="flex-row" id="footer">
         <ul>
             <li>Home</li>
             <li>About Us</li>
             <li>Feedback</li>
         </ul>
-        <p>This is footer</p>
     </footer>
 </body>
 
